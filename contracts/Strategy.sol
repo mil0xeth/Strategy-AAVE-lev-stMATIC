@@ -24,15 +24,15 @@ contract Strategy is BaseStrategy {
     enum Action {WIND, UNWIND}
 
     //wstETH is yieldBearing:
-    IWstETH internal constant yieldBearing = IWstETH(0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0);
+    IWstETH internal constant yieldBearing = IWstETH(0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4);
     //WETH is borrowToken:
-    IERC20 internal constant borrowToken = IERC20(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2);
+    IERC20 internal constant borrowToken = IERC20(0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270);
 
     //AAVEV2 lending pool:
-    IPool private constant lendingPool = IPool(0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2);
-    IProtocolDataProvider private constant protocolDataProvider = IProtocolDataProvider(0x7B4EB56E7CD4b454BA8ff71E4518426369a138a3);
+    IPool private constant lendingPool = IPool(0x794a61358D6845594F94dc1DB02A252b5b4814aD);
+    IProtocolDataProvider private constant protocolDataProvider = IProtocolDataProvider(0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654);
 
-    IPriceOracle private constant priceOracle = IPriceOracle(0x54586bE62E3c3580375aE3723C145253060Ca0C2);
+    IPriceOracle private constant priceOracle = IPriceOracle(0xb023e699F5a33916Ea823A16485e259257cA8Bd1);
 
     // Supply and borrow tokens
     IAToken public aToken;
